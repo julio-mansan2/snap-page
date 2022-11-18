@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Snap Page - Frontend Mentor</title>
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-menu">
+        <img src="./src/images/logo.svg" alt="Logo da Snap - empresa focada no armazenamento e compartilhamento de dados">
+        <nav>
+
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+            <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li class="menu__item">
+                    <button class="acordeon">Features</button>
+                    <ul class="info features">
+                        <li class="to-do"><img src="./src/images/icon-todo.svg" alt="icon-todo"> To do list</li>
+                        <li class="calendar"><img src="./src/images/icon-calendar.svg" alt="icon-calendar"> Calendar</li>
+                        <li class="reminder"><img src="./src/images/icon-reminders.svg" alt="icon-reminders"> Reminders</li>
+                        <li class="planning"><img src="./src/images/icon-planning.svg" alt=""> Planning</li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="acordeon">Company</button>
+                    <ul class="info company">
+                        <li><a href="/">History</a></li>
+                        <li><a href="/">Our Team</a></li>
+                        <li><a href="/">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a class="menu__item" href="#">Carrers</a></li>
+                <li><a class="menu__item about" href="#">About</a></li>
+
+                <ul class="login-area menu__item">
+                    <li><a href="/">Login</a></li>
+                    <li> <a href="/" class="register">Register</a></li>
+                </ul>
+            </ul>
+
+        </nav>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <img src="./src/images/image-hero-mobile.png" aria-hidden="true" class="img-mobile">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <a href="/">Learn more</a>
+            <div class="partners">
+                <img src="./src/images/client-databiz.svg" alt="Logo Databiz">
+                <img src="./src/images/client-audiophile.svg" alt="Logo Audiophile">
+                <img src="./src/images/client-meet.svg" alt="Logo Meet">
+                <img src="./src/images/client-maker.svg" alt="Logo Maker">
+            </div>
+        </section>
+        <section>
+            <img src="./src/images/image-hero-desktop.png" aria-hidden="true" class="img-desktop">
+        </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

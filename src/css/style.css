@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+body {
+    height: 100%;
+    font-family: 'Epilogue', sans-serif;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main';
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    width: 100%;
+    position: relative;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 3.1rem;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 2.1rem;
+}
+
+.header-menu a {
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    transition: 0.3s;
+}
+
+.header-menu a:hover {
+    color: var(--almost-black);
+}
+
+.acordeon {
+    transition: 0.3s ease-in-out;
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    font-family: 'Epilogue', sans-serif;
+}
+
+.acordeon::after {
+    content: url(../images/icon-arrow-down.svg);
+    margin-left: 0.3rem;
+    align-self: center;
+}
+
+.active::after {
+    content: url(../images/icon-arrow-up.svg);
+}
+
+.active.acordeon {
+    font-weight: 700;
+    color: var(--almost-black);
+}
+
+
+.acordeon:hover {
+    color: var(--almost-black);
+    cursor: pointer;
+}
+
+.header .info {
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    font-family: 'Epilogue', sans-serif;
+    max-height: 0;
+    gap: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    flex-direction: column;
+    background-color: var(--almost-white);
+    position: absolute;
+    border-radius: 10px;
+    top: 70%;
+}
+
+.features {
+    left: 8%;
+}
+
+.company {
+    left: 22%;
+}
+
+.header .info li {
+    margin: 1.5rem;
+}
+
+.login-area {
+    display: flex;
+    gap: 3.1rem;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+}
+
+
+.login-area a {
+    color: var(--medium-gray);
+    transition: 0.3s;
+}
+
+.login-area a:hover {
+    color: var(--almost-black);
+    border-color: var(--almost-black);
+}
+
+.login-area .register {
+    padding: 0.6rem 0.9rem;
+    border: 2px solid var(--medium-gray);
+    border-radius: 15px;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    gap: 6.25rem;
+    padding: 5%;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.main .img-desktop {
+    width: 34.3rem;
+    height: 34.3rem;
+    justify-self: center;
+}
+
+.main .intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 3.1rem;
+}
+
+.main .intro p {
+    color: var(--medium-gray);
+    font-size: 1.125rem;
+    margin-bottom: 3.1rem;
+}
+
+.main .intro a {
+    padding: 0.9rem 1.25rem;
+    border-radius: 15px;
+    align-self: flex-start;
+    background-color: var(--almost-black);
+    color: var(--almost-white);
+    transition: 0.3s;
+    margin-bottom: 6.25rem;
+}
+
+.main .intro a:hover {
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+    border: 1px solid var(--almost-black);
+}
+
+.partners img {
+    margin-right: 1.25rem;
+}
+
+input {
+    display: none;
+}
