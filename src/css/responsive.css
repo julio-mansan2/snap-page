@@ -35,6 +35,10 @@
         margin-bottom: 3.1rem;
     }
 
+    br {
+      display: none;
+    }
+
     #menu__toggle {
         opacity: 0;
       }
