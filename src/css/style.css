@@ -132,7 +132,7 @@ body {
 }
 
 .main .img-desktop {
-    width: 34.3rem;
+    width: 30.3rem;
     height: 34.3rem;
     justify-self: center;
 }
@@ -143,7 +143,7 @@ body {
 }
 
 .main .intro h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 3.1rem;
 }
 
@@ -174,5 +174,9 @@ body {
 }
 
 input {
+    display: none;
+}
+
+br {
     display: none;
 }
